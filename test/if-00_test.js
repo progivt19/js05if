@@ -1,4 +1,4 @@
-const f = require('../if-01.js');
+const f = require('../if-00.js');
 
 QUnit.test("ЗАДАЧА 01. f(x,y,z)=min{x+y+z, x*y*z, x*y+z}", function(assert){
 	assert.deepEqual(f( 1, 1, 1), 1, "Не выполнено f( 1, 1, 1) === min {3,1,2} === 1")
