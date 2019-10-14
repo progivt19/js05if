@@ -1,0 +1,28 @@
+{
+  "name": "js05if",
+  "version": "1.0.0",
+  "description": "ЛР5: Простые ветвления",
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "qunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "strings",
+    "строки"
+  ],
+  "author": "А.В.Павлов",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "qunit": "^2.9.3"
+  }
+}
