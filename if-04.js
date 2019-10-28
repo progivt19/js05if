@@ -18,6 +18,9 @@ function f(a, b, c, d){
 		num2 = d;
 
 
+	num1 = Math.abs(num1);
+	num2 = Math.abs(num2);
+
 	if (num1 > num2)
 		return num1;
 	else
