@@ -1,4 +1,4 @@
-var X4 = require('./if-14.js');
-var Y4 = require('./if-14.js');
+var [X4, Y4] = require('./if-14.js');
 
-console.log(X4(0, 0, 2, 0, -2, -1));
+
+console.log(X4(0, 0, 2, 0, 2, -1), Y4(0, 0, 2, 0, 2, -1));
