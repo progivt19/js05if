@@ -1,6 +1,6 @@
 const f = require('../if-04.js');
 
-QUnit.test("ЗАДАЧА 04. f(a,b,c,d)=max{min{|a|,|b|}, max{|c|,|d|}}", 
+QUnit.test("ЗАДАЧА 04. f(a,b,c,d) = max{min{|a|,|b|}, max{|c|,|d|}}", 
   function(assert){
 	assert.deepEqual(f( 5, 2, 3,-4), 4, "Не выполнено f(5,2,3,-4) s=== max {2,4} === 4");
 	assert.deepEqual(f( 2, 5,-4, 3), 4, "Не выполнено f(2,5,-4,3) === max {2,4} === 4");
