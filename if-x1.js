@@ -3,19 +3,21 @@
 //TODO: Напишите функцию
 //04 f (a,b,c,d) = max ( min (|a|,|b|), max (|c|,|d|)) 
 
-function f(a, b, c, d){
-	if (Math.abs(a)<=Math.abs(b))
-        return Math.abs(a);
-	if (Math.abs(b)<=Math.abs(a))
-		return Math.abs(b);
-    if (Math.abs(c)<=Math.abs(d))
-    	return Math.abs(d);
-    if (Math.abs(d)<=Math.abs(c))
-    	return Math.abs(c);
-    if (<=)
-    	return 
-    if (<=)
-    	return
-}
+function f(a, b, c, d) {
+    if (Math.abs(a) < Math.abs(b))
+    { 
+        min = Math.abs(a);}
+    else {min = Math.abs(b)
+            }
+    if (Math.abs(c) > Math.abs(d))
+    {
+        max = Math.abs(c);}
+    else {max = Math.abs(d)
+            }
+    if (min < max)
+        f = max;
+    else f = min;
 
-module.exports = f;
+    return f;
+}
+    module.exports = f;

@@ -1,3 +1,3 @@
 var f = require('./if-x1.js');
 
-console.log(f(6,3,1,4));
+console.log(f(1,2,3,4));    
