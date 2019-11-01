@@ -19,7 +19,7 @@ function f(a, b, c, d){
 			return a
 		}
 		if(a<b){
-			return b;
+			return b
 		}
 	}
 }
