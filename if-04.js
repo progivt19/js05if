@@ -14,15 +14,19 @@ function f(a, b, c, d){
 	var cd = c + d;
 
 	if(ab > cd){
-		if(a > b || a == b)
+		if(a > b || a == b){
 			return b;
-		if(a < b)
+		}
+		if(a < b){
 			return a};		
+		}
 	if(ab < cd || ab == cd)
-		if(c > d || c == d)
+		if(c > d || c == d){
 			return c;
-		if(c < d)
+		}
+		if(c < d){
 			return d;
+		}
 }
 
 module.exports = f;

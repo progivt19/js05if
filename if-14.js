@@ -36,7 +36,7 @@ function Y4(x1, y1, x2, y2, x3, y3){
 		return y3;
 	}
 	if(y1 == y3){
-		return y3;
+		return y2;
 	}
 	else{
 		return (y1+y3-y2);
