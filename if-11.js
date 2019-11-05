@@ -2,6 +2,7 @@
 //TODO: Добавьте правильные параметры
 //TODO: Напишите функцию
 
+
 function WeekDayName(n){
     switch (n) {
         case (1):
