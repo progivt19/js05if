@@ -5,6 +5,7 @@
 var max1 = 0
 var max2 = 0
 
+
 function f(a,b,c,d){
     if (a > b) {
         max1 = a
