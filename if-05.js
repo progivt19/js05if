@@ -1,15 +1,16 @@
-//2 задача
-function h(a,b,c) {
-	if (a+b>c && a+c>b && b+c>a) {
-		var p = (a+b+c) / 2;
-		var s = Math.sqrt(p*(p-a)*(p-b)*(p-c));
-		var h = (2*s) / a;
-		return h;
-	}else{
+//5 задача
+function h(a, b, c){
 
-		var h = -1;
-		return h;
+	if (a + b > c && a + c > b && b + c > a) {
+
+		var p = (a + b + c) / 2;
+		return Math.floor((2 / a) * (Math.sqrt( p * (p - a) * (p - b) * (p - c) )));
+
+	} else {
+		return -1;
 	}
+
+
 }
 
 module.exports = h;
