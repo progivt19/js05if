@@ -1,10 +1,10 @@
 const h = require('../if-05.js');
 
-QUnit.test("ЗАДАЧА 05.", function(assert){
-	assert.deepEqual(h( 5, 4, 3),2.4, "Не выполнено")
-	assert.deepEqual(h(6, 2,5),1.5612494995995994, "Не выполнено")
-	assert.deepEqual(h(8,1, 4),-1, "Не выполнено")
-	assert.deepEqual(h( 1,1,3), -1, "Не выполнено")
-	assert.deepEqual(h(7, 9, 4),3.8332593899996397, "Не выполнено")
-	assert.deepEqual(h(10, 5, 2), -1, "Не выполнено")
+QUnit.test("ЗАДАЧА 05. h(a, b, c)", function(assert){
+	assert.deepEqual(h(5, 4, 3),2, "Не выполнено h(a, b, c) === 2")
+	assert.deepEqual(h(15, 8, 7),-1, "Не выполнено h(a, b, c) === -1")
+	assert.deepEqual(h(5, 3, 3),1, "Не выполнено h(a, b, c) === 1")
+	assert.deepEqual(h(1, 1, 3),-1, "Не выполнено h(a, b, c) === -1")
+	assert.deepEqual(h(7, 9, 4),3, "Не выполнено h(a, b, c) === 3")
+	assert.deepEqual(h(40, 34, 22),18, "Не выполнено h(a, b, c) === 18")
 });
