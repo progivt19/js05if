@@ -6,5 +6,4 @@ QUnit.test("ЗАДАЧА 10. MonthName(n) возварщает название 
 	assert.deepEqual(MonthName(5), "май", "Не выполнено MonthName(5) == май")
 	assert.deepEqual(MonthName(3), "март", "Не выполнено MonthName(3) == март")
 	assert.deepEqual(MonthName(12), "декабрь", "Не выполнено MonthName(12) == декабрь")
-	assert.deepEqual(MonthName(9), "сентябрь", "Не выполнено MonthName(9) == сентябрь")
 });
