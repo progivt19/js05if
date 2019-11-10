@@ -20,7 +20,6 @@ function S(x1,y1,x2,y2,x3,y3){
 	}
 	if (y3===y2 && ((x3===x1)||(x2===x1)) && Math.abs(x3-x2)===(Math.abs(y3-y1)||(Math.abs(y2-y1)))){
 		return "true";
-	if Math.sqrt(Math.pow(Math.abs(x1-x2))+Math.pow(Math.abs(y1-y2))
 	}
 	else{
 		return "false";

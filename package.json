@@ -2,7 +2,9 @@
   "name": "js05if",
   "version": "1.0.0",
   "description": "ЛР5: Простые ветвления",
-  "devDependencies": {},
+  "devDependencies": {
+    "qunit": "^2.9.3"
+  },
   "directories": {
     "test": "test"
   },
@@ -19,7 +21,5 @@
   ],
   "author": "А.В.Павлов",
   "license": "MIT",
-  "dependencies": {
-    "qunit": "^2.9.3"
-  }
+  "dependencies": {}
 }
