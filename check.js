@@ -1,3 +1,3 @@
-var S = require('./if-13.js');
+var f = require('./if-06.js');
 
-console.log(S(1,2,3,3,4,1));
+console.log(f(1,2,3,));
