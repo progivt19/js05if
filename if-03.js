@@ -3,24 +3,26 @@
 //TODO: Напишите функцию
 
 function f(a, b, c, d){
-	var ab=a+b;
-	var cd=c+d;
+	var max1;
+	var max2;
 
-	if(ab>cd || ab==cd){
-		if(c>d || c==d){
-			return c
-		}
-		if(c<d){
-			return d
-		}
-	};
-	if(ab<cd || ab==cd){
-		if(a>b || a==b){
-			return a
-		}
-		if(a<b){
-			return b
-		}
+	if(a < b || a == b){
+		max1 = b;
+	}
+	if(a > b){
+		max1 = a;
+	}
+	if(c > d || c == d){
+		max2 = c;
+	}
+	if(c < d){
+		max2 = d;
+	}
+	if(max1 > max2 || max1 == max2){
+		return max2;
+	}
+	if(max1 < max2){
+		return max1;
 	}
 }
 
