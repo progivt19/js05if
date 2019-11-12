@@ -2,59 +2,59 @@
 //TODO: Добавьте правильные параметры
 //TODO: Напишите функцию
 
-let MonthName1 = 'Январь';
-let MonthName2 = 'Февраль';
-let MonthName3 = 'Март';
-let MonthName4 = 'Апрель';
-let MonthName5 = 'Май';
-let MonthName6 = 'Июнь';
-let MonthName7 = 'Июль';
-let MonthName8 = 'Август';
-let MonthName9 = 'Сентябрь';
-let MonthName10 = 'Октябрь';
-let MonthName11 = 'Ноябрь';
-let MonthName12 = 'Декабрь';
+const MonthName1 = 'Январь';
+const MonthName2 = 'Февраль';
+const MonthName3 = 'Март';
+const MonthName4 = 'Апрель';
+const MonthName5 = 'Май';
+const MonthName6 = 'Июнь';
+const MonthName7 = 'Июль';
+const MonthName8 = 'Август';
+const MonthName9 = 'Сентябрь';
+const MonthName10 = 'Октябрь';
+const MonthName11 = 'Ноябрь';
+const MonthName12 = 'Декабрь';
 
 function f(n) {
 	switch (n) {
 		case 1:
-			console.log(MonthName1);
+			return MonthName1;
 			break;
 		case 2:
-			console.log(MonthName2);
+			return MonthName2;
 			break;
 		case 3:
-			console.log(MonthName3);
+			return MonthName3;
 			break;
 		case 4:
-			console.log(MonthName4);
+			return MonthName4;
 			break;
 		case 5:
-			console.log(MonthName5);
+			return MonthName5;
 			break;
 		case 6:
-			console.log(MonthName6);
+			return MonthName6;
 			break;
 		case 7:
-			console.log(MonthName7);
+			return MonthName7;
 			break;
 		case 8:
-			console.log(MonthName8);
+			return MonthName8;
 			break;
 		case 9:
-			console.log(MonthName9);
+			return MonthName9;
 			break;
 		case 10:
-			console.log(MonthName10);
+			return MonthName10;
 			break;
 		case 11:
-			console.log(MonthName11);
+			return MonthName11;
 			break;
 		case 12:
-			console.log(MonthName12);
+			return MonthName12;
 			break;
 		default:
-			console.log("");
+			return "";
 	}
 }
 
