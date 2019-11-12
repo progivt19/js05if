@@ -1,42 +1,42 @@
 //TODO: Впишите имя функции из задания вместо ...
 //TODO: Добавьте правильные параметры
 //TODO: Напишите функцию
-function f(n) {
-   switch(n)
-      {
-      	case 0 :
-            f = ("zero"); 
-            break;
-         case 1 :
-            f = ("one"); 
-            break;
-         case 2 :
-            f = ("two"); 
-            break;
-         case 3 :
-            f = ("three");
-            break;
-         case 4 :
-            f = ("four");
-            break;
-         case 5 :
-            f = ("five");
-            break;
-         case 6 :
-            f = ("six"); 
-            break;
-         case 7 :
-            f = ("seven"); 
-            break;
-         case 8 :
-            f = ("eight"); 
-            break;
-         case 9 :
-            f = ("nine"); 
-            break;
-         default :
-            f = ("Error");
+
+function digitName(f){
+		name = ''
+	switch(f){
+		case 0:
+			name = 'ZERO';
+			break;
+		case 1:
+			name = 'ONE';
+			break;
+		case 2:
+			name = 'TWO';
+			break;
+		case 3:
+			name = 'THREE';
+			break;
+		case 4:
+			name = 'FOUR';
+			break;
+		case 5:
+			name = 'FIVE';
+			break;
+		case 6:
+			name = 'SIX';
+			break;
+		case 7:
+			name = 'SEVEN';
+			break;
+		case 8:
+			name = 'EIGHT';
+			break;
+		case 9:
+			name = 'NINE';
+			break;
+		default:name = 'ERROR';
+	}
+	return name
 }
-return f;
-}
-module.exports =  f;
+module.exports = digitName;
