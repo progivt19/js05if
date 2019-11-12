@@ -2,8 +2,8 @@
 //TODO: Добавьте правильные параметры
 //TODO: Напишите функцию
 
-function MonthName(n){
-    switch (n){
+function F(x){
+    switch (x){
     case 1: return "January";
     break;
     case 2: return "February";
@@ -31,4 +31,4 @@ function MonthName(n){
     default: return "";
     }
     }
-    module.exports = MonthName;
+    module.exports = F;
