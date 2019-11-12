@@ -5,4 +5,5 @@ QUnit.test("ЗАДАЧА 10.", function(assert){
 	assert.deepEqual(monthName(2),'Февраль', "Не выполнено2")
 	assert.deepEqual(monthName(12),'Декабрь', "Не выполненe12")
 	assert.deepEqual(monthName(8),'Август', "Не выполнено8")
+	assert.deepEqual(monthName(-1),'Error', "Не выполнено8")
 });
