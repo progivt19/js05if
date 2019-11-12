@@ -16,9 +16,9 @@ function f(a,b,c,d){
         max2 = d
 }
     if (max1 <= max2){
-        return (max1)
+        return max1
     }else{
-        return (max2)
+        return max2
     }
 }
 
