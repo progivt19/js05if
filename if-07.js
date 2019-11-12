@@ -23,6 +23,9 @@ function S(x1, y1, x2, y2, x3, y3){
 	if(x1 == y1 && x2 == y2 && x3 == y3){
 		return d;
 	}
+	if(Math.abs(x1) == Math.abs(y1) && Math.abs(x2) == Math.abs(y2) && Math.abs(x3) == Math.abs(y3)){
+		return d;
+	}
 	if(ab == ac){
 		d = ((bc*(Math.sqrt((ab*ab)-((bc/2)*(bc/2)))))/2);
 	}
