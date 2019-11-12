@@ -17,9 +17,13 @@ function X4(x1, y1, x2, y2, x3, y3){
 	if(x2 == x3){
 		return x1;
 	}
-	else{
-		return (x1+x3-x2);
+	if(x3 < x2){
+		return (x1 + x3 - x2);
 	}
+	if(x3 > x2){
+		return (x3 - x1 + x2);
+	}
+	
 }
 
 function Y4(x1, y1, x2, y2, x3, y3){
@@ -38,8 +42,11 @@ function Y4(x1, y1, x2, y2, x3, y3){
 	if(y1 == y3){
 		return y2;
 	}
-	else{
-		return (y1+y3-y2);
+	if(y1 > y3){
+		return (y1 + y3 - y2);
+	}
+	if(y3 > y1){
+		return (y3 + y2 - y1);
 	}
 }
 

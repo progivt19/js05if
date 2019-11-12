@@ -8,7 +8,7 @@ function S(x1, y1, x2, y2, x3, y3){
 	var a = [x1, y1];
 	var b = [x2, y2];
 	var c = [x3, y3];
-	var d = 1;
+	var d = -1;
 
 	var ab = Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
 	var ac = Math.sqrt(((x3 - x1) * (x3 - x1)) + ((y3 - y1) * (y3 - y1)));
@@ -18,6 +18,9 @@ function S(x1, y1, x2, y2, x3, y3){
 		return d;
 	}
 	if(y1 == y2 && y1 == y3 && y2 == y3){
+		return d;
+	}
+	if(x1 == y1 && x2 == y2 && x3 == y3){
 		return d;
 	}
 	if(ab == ac){

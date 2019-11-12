@@ -9,24 +9,27 @@ function f(a, b, c, d){
 	b = Math.abs(b);
 	c = Math.abs(c);
 	d = Math.abs(d);
+	var min1;
+	var max2;
 
-	var ab = a + b;
-	var cd = c + d;
-
-	if(ab > cd){
-		if(a > b || a == b){
-			return b;
-		}
-		if(a < b){
-			return a};		
-		}
-	if(ab < cd || ab == cd)
-		if(c > d || c == d){
-			return c;
-		}
-		if(c < d){
-			return d;
-		}
+	if(a < b || a == b){
+		min1 = a;
+	}
+	if(a > b){
+		min1 = b;
+	}
+	if(c > d || c == d){
+		max2 = c;
+	}
+	if(c < d){
+		max2 = d;
+	}
+	if(min1 > max2 || min1 == max2){
+		return min1;
+	}
+	if(min1 < max2){
+		return max2;
+	}
 }
 
 module.exports = f;
