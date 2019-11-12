@@ -1,3 +1,3 @@
 var f = require('./if-08.js');
 
-console.log(f(3,6,5,1,3,4));
+console.log(f(5,6,3,6,3,3));
