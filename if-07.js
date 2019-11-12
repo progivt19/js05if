@@ -17,4 +17,4 @@ if ((a == b || b == c || c == a)); {
   }
 }
 
-module.exports = s;
+ module.exports = s;
