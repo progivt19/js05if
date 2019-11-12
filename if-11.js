@@ -1,38 +1,29 @@
 
 function f(N){
 	switch(N){
-		case 0:
-			console.log('ZERO');
-			break;
 		case 1:
-			console.log('ONE');
+			return ('Понедельник');
 			break;
 		case 2:
-			console.log('TWO');
+			return ('Вторник');
 			break;
 		case 3:
-			console.log('THREE');
+			return ('Среда');
 			break;
 		case 4:
-			console.log('FOUR');
+			return ('Четверг');
 			break;
 		case 5:
-			console.log('FIVE');
+			return ('Пятница');
 			break;
 		case 6:
-			console.log('SIX');
+			return ('Суббота');
 			break;
 		case 7:
-			console.log('SEVEN');
-			break;
-		case 8:
-			console.log('EIGHT');
-			break;
-		case 9:
-			console.log('NINE');
+			return ('Воскресенье');
 			break;
 		default:
-			console.log("ERROR")
+			return ("");
 			break;
 	}
 }
