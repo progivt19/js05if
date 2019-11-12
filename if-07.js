@@ -2,12 +2,12 @@
 //TODO: Добавьте правильные параметры
 //TODO: Напишите функцию
 
-function s(x1,y1,x2,y2,x3,y3){
+function S(x1,y1,x2,y2,x3,y3){
 	var a = Math.sqrt(Math.pow(x1-x2,2) + Math.pow(y1-y2,2));
 	var b = Math.sqrt(Math.pow(x2-x3,2) + Math.pow(y2-y3,2));
 	var c = Math.sqrt(Math.pow(x3-x1,2) + Math.pow(y3-y1,2));
 
-if ((a == b || b == c || c == a)); {
+if ((a == b || b == c || c == a) && ((a+b > c) && (a+c > b) && (b+c > a))); {
 
 	var p = (a+b+c)/2;
 
@@ -17,4 +17,4 @@ if ((a == b || b == c || c == a)); {
   }
 }
 
- module.exports = s;
+ module.exports = S;
