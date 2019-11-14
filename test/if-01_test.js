@@ -1,0 +1,1 @@
+const f = require('../if-01.js');
