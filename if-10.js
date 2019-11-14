@@ -41,7 +41,7 @@ function MonthName(n){
 			return('Декабрь')
 			break;
 		default:
-			return('Такого месяца нет')
+			return('')
 	}
 }
 module.exports = MonthName;
