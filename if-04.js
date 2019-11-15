@@ -14,5 +14,6 @@ function f(a, b, c, d) {
     else f = min;
 
     return f;
+    
 }
     module.exports = f;
