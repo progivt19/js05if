@@ -2,16 +2,16 @@
 //TODO: Добавьте правильные параметры
 //TODO: Напишите функцию
 
-function f(x1, y1, x2, y2, x3, y3){
-	var opr = ((x1 - x3) * (y2 - y3)) - ((x2 - x3) * (y2 - y3));
-	var ab = Math.sqrt( ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)) );
-	var ac = Math.sqrt( ((x1 - x3) * (x1 - x3)) + ((y1 - y3) * (y1 - y3)) );
-	var bc = Math.sqrt( ((x3 - x2) * (x3 - x2)) + ((y3 - y2) * (y3 - y2)) );
-	if( (ab + ac > bc || ab + bc > ac || ac + bc > ab) && ((ab * ab) + (ac * ac) > (bc * bc) || (ab * ab) + (bc * bc) > (ac & ac) || (ac *ac) + (bc * bc) > (ab * ab)) ) {
-		return opr * 0.5;
-	}else{
-		return -1;
-	}
+function S(x1, y1, x2, y2, x3, y3){
+	a = Math.sqrt((x2-x1)^2+(y2-y1)^2);
+	b = Math.sqrt((x3-x2)^2+(y3-y2)^2);
+	c = Math.sqrt((x1-x3)^2+(y1-y3)^2);
+	p = (a + b + c)/2;
+	if (a^2 + b^2 > c^2) 
+		S = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+	
+	else S = -1;
+	return S;
 }
 
-module.exports = f;
+module.exports = S;
