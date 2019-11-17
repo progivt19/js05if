@@ -5,6 +5,9 @@
 function digitNAME(n){
 
 switch (n) {
+  case 0:
+    return( 'ZERO' );
+    break;
   case 1:
     return( 'ONE' );
     break;
@@ -33,7 +36,7 @@ switch (n) {
     return( 'NINE' );
     break;
   default:
-    return( "ERROR" );
+    return( 'ERROR' );
 }
 }
 
