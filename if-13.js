@@ -17,6 +17,23 @@ return true;
 else 
 	return false;
 
+<<<<<<< HEAD
+=======
+/* Решение неверно:
+   а) например, дает неправильный ответ 
+   для S(0,0,1,5,2,0); 
+   б) функция должна возвращать 
+   логические true/false, а не 
+   строки "true"/"false" 
+*/
+
+ if (d1 === d2)
+ 	return "true";
+ else if (d1 === d3)
+ 	return "true";
+ else if (d2 === d3)
+ 	return "true";
+>>>>>>> f450d45eb421cc02f109ba77c7fb833b4e321bb3
 
 if (a == c)
 if (b == Math.sqrt(a*a + c*c))
