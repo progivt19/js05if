@@ -1,2 +1,2 @@
-var f = require('./if-03.js');
-console.log(f(2,11,1,6));
+var n = require('./if-12.js');
+console.log (n(7));
