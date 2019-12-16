@@ -1,14 +1,12 @@
 const f = require('../if-04.js');
 
-QUnit.test("ЗАДАЧА 04. f(a,b,c,d)=max{min{|a|,|b|}, max{|c|,|d|}}", 
-  function(assert){
-	assert.deepEqual(f( 5, 2, 3,-4), 4, "Не выполнено f(5,2,3,-4) s=== max {2,4} === 4");
-	assert.deepEqual(f( 2, 5,-4, 3), 4, "Не выполнено f(2,5,-4,3) === max {2,4} === 4");
-	assert.deepEqual(f(-5, 2, 4, 4), 4, "Не выполнено f(-5,2,4,4) === max {2,4} === 4");
-	assert.deepEqual(f(-5,-6,-3,-4), 5, "Не выполнено f(-5,-6,-3,-4) === max {5,4} === 5");
-	assert.deepEqual(f(-6,-5,-3,-4), 5, "Не выполнено f(-6,-5,-3,-4) === max {5,4} === 5");
-	assert.deepEqual(f(-5,-5,-3,-4), 5, "Не выполнено f(-5,-5,-3,-4) === max {5,4} === 5");
-	assert.deepEqual(f( 4,-4, 4, -4), 4, "Не выполнено f(4,-4, 4,-4) === max {4,4} === 4");
-	assert.deepEqual(f(-1, 5,-1, -5), 5, "Не выполнено f(-1,5,-1,-5) === max {1,5} === 5");
-  }
-);
+QUnit.test("S(x1, y1, x2, y2,x3, y3)=true/false", function(assert){
+	assert.deepEqual(S(1,1,3,1,1,3), true, "S(1,1,3,1,1,3) === true")
+	assert.deepEqual(S(3,1,1,1,1,3), true, "S(3,1,1,1,1,3) === true")
+	assert.deepEqual(S(1,1,1,3,3,1), true, "S(1,1,1,3,3,1) === true")
+	assert.deepEqual(S(2,0,0,2,4,2), true, "S(2,0,0,2,4,2) === true")
+	assert.deepEqual(S(1,1,4,1,1,3), false, "S(1,1,4,1,1,3) === false")
+	assert.deepEqual(S(4,3,9,10,3,0), false, "S(4,3,9,10,3,0) === false")
+	assert.deepEqual(S(-4,3,9,10,3,0), false, "S(-4,3,9,10,3,0) === false")
+});
+
