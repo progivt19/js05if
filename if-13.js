@@ -3,26 +3,38 @@
 //TODO: Напишите функцию
 
 function S(x1,y1,x2,y2,x3,y3){
-	if (y1===y2 && ((x1===x3)||(x2===x3)) && Math.abs(x2-x1)===(Math.abs(y2-y3)||(Math.abs(y1-y3)))){
-		return "true";
+	var a = Number((Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2))).toFixed(5));
+	var b = Number((Math.sqrt((x1-x3)*(x1-x3)+(y1-y3)*(y1-y3))).toFixed(5));
+	var c = Number((Math.sqrt((x2-x3)*(x2-x3)+(y2-y3)*(y2-y3))).toFixed(5));
+	console.log(a)
+	console.log(b)
+	console.log(c)
+	if (a>b && a>c) {
+		if (a ==  Number((Math.sqrt(2)*b).toFixed(5))) {
+			return 'true';
+		}
+		else {
+			return 'false';
+		}
 	}
-	if (y1===y3 && ((x1===x2)||(x3===x2)) && Math.abs(x3-x1)===(Math.abs(y3-y2)||(Math.abs(y1-y2)))){
-		return "true";
+	else if (b>a && b>c) {
+		if (b == Number((Math.sqrt(2)*a).toFixed(5))) {
+			return 'true';
+		}
+		else {
+			return 'false';
+		}
 	}
-	if (y2===y1 && ((x2===x3)||(x1===x3)) && Math.abs(x2-x1)===(Math.abs(y2-y3)||(Math.abs(y1-y3)))){
-		return "true";
-	}
-	if (y2===y3 && ((x2===x1)||(x3===x1)) && Math.abs(x2-x3)===(Math.abs(y2-y1)||(Math.abs(y3-y1)))){
-		return "true";
-	}
-	if (y3===y1 && ((x3===x2)||(x1===x2)) && Math.abs(x3-x1)===(Math.abs(y3-y2)||(Math.abs(y1-y2)))){
-		return "true";
-	}
-	if (y3===y2 && ((x3===x1)||(x2===x1)) && Math.abs(x3-x2)===(Math.abs(y3-y1)||(Math.abs(y2-y1)))){
-		return "true";
+	else if (c>a & c>b) {
+		if (c == Number((Math.sqrt(2)*a).toFixed(5))) {
+			return 'true';
+		}
+		else {
+			return 'false';
+		}
 	}
 	else{
-		return "false";
+		return 'false'
 	}
 }
 
