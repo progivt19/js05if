@@ -1,4 +1,4 @@
-//12 Задача
+//12 Задание
 function digitName(n){
 	name = 'ERROR'
 
